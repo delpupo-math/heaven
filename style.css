@@ -1,0 +1,118 @@
+
+
+#home{
+    background: url(imagens/fundo\ site.svg);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-pack{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pack-texto{
+    flex: 1;
+    max-width: 500px;
+}
+
+.pack-imagem img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-texto{
+    flex: 1;
+    max-width: 500px;
+}
+
+.sobre-imagem{
+    order: -1;
+     max-width: 100%;
+    height: auto;
+}
+
+.container-compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.compra-button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.compra-button img{
+    max-width: 50vh;
+    height: auto;
+    border-radius: 8px;
+}
+
+.compra-button button{
+    border: none;
+}
+
+.compra-button button:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container-pack{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pack-texto{
+        max-width: 100%;
+    }
+
+    .pack-imagem{
+        width: 100%;
+    }
+
+    .container-sobre{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto{
+        max-width: 100%;
+        order: -1;
+    }
+
+    .sobre-imagem{
+        width: 100%;
+    }
+
+}
